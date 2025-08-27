@@ -4,7 +4,7 @@ Smart contract implementation for WonConnect platform on Kaia blockchain.
 
 ## Smart Contracts Overview
 
-### KRWStablecoin.sol
+### 1. KRWStablecoin.sol
 KRW-pegged ERC20 stablecoin with controlled minting/burning.
 
 **Key Functions:**
@@ -14,7 +14,7 @@ KRW-pegged ERC20 stablecoin with controlled minting/burning.
 - `addBurner(address burner)` - Add authorized burner
 - `pause()` / `unpause()` - Emergency pause functionality
 
-### WonConnectFactory.sol
+### 2. WonConnectFactory.sol
 Main platform contract managing investment groups and platform operations.
 
 **Key Functions:**
@@ -24,7 +24,7 @@ Main platform contract managing investment groups and platform operations.
 - `collectBrokerageFee(uint256 amount)` - Collect platform fees
 - `updateFeeRates(uint256, uint256, uint256)` - Update platform fee structure
 
-### InvestmentGroup.sol
+### 3. InvestmentGroup.sol
 Individual syndicate contract for startup investments with SAFE integration.
 
 **Key Functions:**
@@ -34,7 +34,7 @@ Individual syndicate contract for startup investments with SAFE integration.
 - `emergencyWithdraw(string reason)` - Emergency withdrawal before execution
 - `getGroupInfo()` - Get syndicate status and financial info
 
-### LPShareNFT.sol
+### 4. LPShareNFT.sol
 ERC721 NFT representing LP investment shares with automatic profit distribution.
 
 **Key Functions:**
